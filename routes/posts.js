@@ -4,6 +4,8 @@ const router = express.Router();
 
 router.get('/', postController.getAllPosts);
 
+router.get('/:id', postController.getPostByID);
+
 router.post('/', postController.createPost);
 
 router.delete('/', postController.deleteAllPost);
