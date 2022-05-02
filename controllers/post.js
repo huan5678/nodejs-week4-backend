@@ -6,7 +6,6 @@ const postController = {
   getAllPosts: async (req, res) => {
     const timeSort = req.query.timeSort == "asc" ? "createdAt" : "-createdAt"
     const q = req.query.q !== undefined ? {"content": new RegExp(req.query.q)} : {};
-    const sort = req.body.sort;
     const getAllPosts = await Post.find(q).populate({
       path: 'user',
       select: 'name photo'
