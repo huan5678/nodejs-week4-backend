@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "c636c4d3-70d8-40d4-8ce3-6f15c6adfe7a",
+		"name": "NodeJS-week4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得全部貼文",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodejs-week4.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"nodejs-week4",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除全部貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodejs-week4.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"nodejs-week4",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "修改貼文",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"content\": \"由postman修改的貼文\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodejs-week4.herokuapp.com/posts/626f3c21bb170aae1105dc8f",
+					"protocol": "https",
+					"host": [
+						"nodejs-week4",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"626f3c21bb170aae1105dc8f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增貼文",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"content\": \"由postman新增的貼文\",\n    \"user\": \"626cde7cde00e23386e81da8\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodejs-week4.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"nodejs-week4",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "取得單一貼文",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodejs-week4.herokuapp.com/posts/626ea63edb68035166cc34e0",
+					"protocol": "https",
+					"host": [
+						"nodejs-week4",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"626ea63edb68035166cc34e0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單一貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodejs-week4.herokuapp.com/posts/626f3d08bb170aae1105dc96",
+					"protocol": "https",
+					"host": [
+						"nodejs-week4",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"626f3d08bb170aae1105dc96"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
